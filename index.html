@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="./css/reset.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <title>hw1</title>
+</head>
+<body>
+<div class="wrap">
+<!-- Заголовок -->
+    <header class="header"> 
+
+        <!-- Навигация -->
+        <nav class="nav container nav__container"> 
+                
+            <!-- Лого -->
+            <a href="#" class="logo"> <span class="logo-color">Web</span>Studio</a>
+
+            <!-- меню сайта -->
+            <ul class="site-nav list">
+                <li class="item"><a href="index.html" class="link">Студія</a></li>
+                <li class="item"><a href="portfolio.html" class="link">Портфоліо</a></li>
+                <li class="item"><a href="#" class="link">Контакти</a></li>
+            </ul>
+
+            <!-- Контакты -->
+            <ul class="contacts-nav contacts">
+                <li class="item"><a href="mailto:info@devstudio.com">info@devstudio.com</a> </li>
+                <li class="item"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+<!-- Основная инфа --> 
+    <main>
+
+        <!-- Главная страница -->
+        <div class="main">
+            <div class="main-container container"> 
+                <h1 class="main-title">Ефективні рішення для вашого бізнесу</h1>
+                <button  type="button" class="main-button">Замовити послугу</button>
+            </div>
+        </div>
+
+        <!-- ИСХОДНЫЙ ВАРИАНТ
+            <div class="main-container container"> 
+                <div class="main-box-title">
+                    <h1 class="main-title">Ефективні рішення для вашого бізнесу</h1>
+                </div>
+                <div class="main-box-button">
+                    <button  type="button" class="main-button">Замовити послугу</button>
+                </div>
+            </div>-->
+
+        <!-- Блок преимуществ -->
+        <section class="edge section-edge">
+            <div class="edge-container container">
+                <ul class="edge-list">
+
+                    <li class="edge-column">
+                        <h3 class="column-title">Увага до деталей</h3>
+                        <p class="column-text">Ідейні міркування, і навіть початок повсякденної роботи з формуванням позиції.</p>
+                    </li>
+
+                    <li class="edge-column">
+                        <h3 class="column-title">Пунктуальність</h3>
+                        <p class="column-text">Завдання огранізації, особливо рамки і місце навчання кадрів тягне у себе</p>
+                    </li>
+
+                    <li class="edge-column">
+                        <h3 class="column-title">Планування</h3>
+                        <p class="column-text">Так само консультація з широким активом значною мірою зумовлює.</p>
+                    </li>
+
+                    <li class="edge-column">
+                        <h3 class="column-title">Сучасні технології</h3>
+                        <p class="column-text"> Значимість цих проблем настільки очевидна, що реалізация планових завдань.</p>
+                    </li>           
+                </ul>
+            </div>
+        </section>
+
+        <!-- Блок о нашей работе -->
+        <section class="about section-about"> 
+            <div class="about-container container">
+                <div class="about-title-box">
+                    <h2 class="about-title">Чим ми займаємось</h2>
+                </div>
+                <div class="about-images-box">
+                    <img src="./images/edge1.webp"  class="about-image" alt="Человек печатет на клавиатуре">
+                    <img src="./images/edge2.webp"  class="about-image" alt="Человек настраивает телефон через пк">
+                    <img src="./images/edge3.webp"  class="about-image" alt="Человек использует графический планшет">
+                </div>
+            </div>
+        </section>
+
+        <!-- Блок о команде ПЕРЕРАБОТАНЫЙ  -->
+        <section class="team section-team">
+            <div class="team-container container">
+
+                <h2 class="team-title">Наша команда</h2>
+
+                <ul class="team-list">
+                    <li class="team-column">
+                        <img src="./images/human1.webp" class="team-image" alt="Фото Ігор Дем'яненко">                            
+                        <p class="name">Ігор Дем'яненко</p>                                                        
+                        <p class="position">Product Designer</p>                            
+                    </li>
+
+                    <li class="team-column">
+                        <img src="./images/human2.webp" class="team-image"  alt="Фото Ольга Рєпіна">                            
+                        <p class="name">Ольга Рєпіна</p>                                                        
+                        <p class="position">Frontend Developer</p>                            
+                    </li>
+
+                    <li class="team-column">
+                        <img src="./images/human3.webp" class="team-image"alt="Фото Микола Тарасов">                            
+                        <p class="name">Микола Тарасов</p>                                                        
+                        <p class="position">Marketing</p>                            
+                    </li>
+
+                    <li class="team-column">
+                        <img src="./images/human4.webp" class="team-image" alt="Фото Михайло Єрмаков">                            
+                        <p class="name">Михайло Єрмаков</p>                                                        
+                        <p class="position">UI Designer</p>                            
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Блок о команде ИСХОДНЫЙ ВАРИАНТ-->
+        <!-- <section class="team section-team">
+            <div class="team-container container">
+
+                <div class="team-title-box">
+                    <h2 class="team-title">Наша команда</h2>
+                </div>
+
+                    <ul class="team-list">
+                    <li class="team-column">
+
+                        <img src="./images/human1.webp" class="team-image" width="270" height="260" alt="Фото Игора">
+
+                        <div class="column-text">
+
+                            <div class="text-name">
+                                <p class="name">Ігор Дем'яненко</p>
+                            </div>
+
+                            <div class="text-position">
+                                <p class="position">Product Designer</p>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="team-column">
+                        <img src="./images/human2.webp" class="team-image" width="270" height="260" alt="Фото Ольги">
+                        <div class="column-text">
+                            <div class="text-name">
+                                <p class="name">Ольга Рєпіна</p>
+                            </div>
+                            <div class="text-position">
+                                <p class="position">Frontend Developer</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="team-column">
+                        <img src="./images/human3.webp" class="team-image" width="270" height="260" alt="Фото Миколи">
+                        <div class="column-text">
+                            <div class="text-name">
+                                <p class="name">Микола Тарасов</p>
+                            </div>
+                            <div class="text-position">
+                                <p class="position">Marketing</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="team-column">
+                        <img src="./images/human4.webp" class="team-image" width="270" height="260" alt="Фото Михайла">
+                        <div class="column-text">
+                            <div class="text-name">
+                                <p class="name">Михайло Єрмаков</p>
+                            </div>
+                            <div class="text-position">
+                                <p class="position">UI Designer</p>
+                            </div>
+                        </div>
+                    </li>
+                    </ul>
+            </div>
+        </section> -->
+
+    </main>
+
+<!-- Контактная информация -->
+    <footer class="footer">
+            <address class="footer-container container">
+                <div class="footer-box">
+                    <!-- Лого -->
+                    <a href="#" class="footer-logo logo"><span class="logo-color">Web</span>Studio</a>
+                    <!-- Адрес -->
+                    <!-- Контакты -->
+                    <ul class="contacts-footer contacts">
+                        <li class="item"><p>м. Київ, пр-т Лесі Українки, 26</p></li>
+                        <li class="item"><a href="mailto:info@devstudio.com">info@devstudio.com</a> </li>
+                        <li class="item"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    </ul>
+                </div>
+            </address>
+    </footer>
+
+</div>
+</body>
+
+</html>
+
