@@ -1,0 +1,26 @@
+@import '../components/alert-info';
+@import '../components/text-options';
+@import '../components/buttons';
+
+@import '../components/task-header';
+// 
+@import '../components/action-button';
+
+
+.widget {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.widget__text-color{
+    font-size: $fs-49;
+    font-weight: $fw-500;
+}
+
+.widget__button{
+    margin-top: 40px;
+    padding: 8px 22px;
+    cursor: pointer
+}

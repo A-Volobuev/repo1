@@ -1,0 +1,52 @@
+@import '../components/alert-info';
+@import '../components/text-options';
+@import '../components/buttons';
+
+@import '../components/task-header';
+// 
+@import '../components/input-condition';
+
+.container-task{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px; 
+    position: relative;
+}
+
+.container-task__title{
+    font-size: $fs-49;
+    font-weight: $fw-500;
+
+    margin-top: 30px;
+}
+
+// Настройка цветов инпута для этого задания
+.input-condition{
+    &:not(:focus):valid{
+        border: 2px solid  rgba(0, 0, 0, 0.23);
+    }
+}
+.user-label{
+    &:not(:focus){
+        color: $sendary-text-color;
+    }
+}
+
+.input-condition:focus, input:valid {
+    outline: none;
+    border: 2px solid $button-color;
+}
+.input-condition:focus ~ label, input:valid ~ label {
+    color: $button-color;
+}
+
+.input-condition:focus ~ label, input:valid ~ label {
+    transform: translateY(-60px) translateX(-55px) scale(1);
+    background-color: white;
+    padding: 0 .2em;
+}
+.input-condition:focus ~ label{
+    color: $button-color;
+}

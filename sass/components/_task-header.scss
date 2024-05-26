@@ -1,0 +1,20 @@
+.task__header{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    background-color: $alert-info-color;
+}
+.button__back{
+    margin: 50px auto 0px 32px;
+    box-shadow: 1px 4px 6px  rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 5px 3px  rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 7px 4px  rgba(0, 0, 0, 0.12);
+}
+.header__title{
+    font-weight: $fw-400;
+    font-size: $fs-24;
+    letter-spacing: 0px;
+    line-height: 133%;
+
+    width: 960px;
+    margin: 20px auto 0px 32px;
+    padding: 16px 0px 16px 0px;
+}

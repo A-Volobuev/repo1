@@ -1,0 +1,62 @@
+@import '../components/alert-info';
+@import '../components/text-options';
+@import '../components/buttons';
+
+@import '../components/task-header';
+// 
+@import '../components/action-button';
+@import '../components/input-condition';
+
+.controls-conteiner{
+    display: flex;
+    margin: 24px 0px 0px 32px;
+    position: relative;
+    gap: 10px;
+} 
+ 
+.input-condition{
+    width: 133px;
+}
+.user-label{
+    transform: translateY(-6px) translateX(10px);
+    background-color: white;
+}
+.user-label__number{
+    height: 10px;
+    position: absolute;
+}
+.input-condition__number:placeholder-shown + .user-label__number{
+    transform: translateY(19px) translateX(10px);
+}
+
+.input-condition__number:focus + .user-label__number, .input-condition__number:not(:placeholder-shown) + .user-label__number и .input-condition__number:valid + .user-label__number{
+    transform: translateY(-7px) translateX(10px) scale(1);
+    background-color: white;
+    padding: 0 .2em;
+    color: $button-color;
+}
+
+svg{
+    width: 24px;
+    height: 24px;
+}
+
+.button-text{
+    text-transform: uppercase;
+    padding: 8px 22px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.div-boxes{
+    margin: 17px 0px 0px 32px;
+}
+.div-css-style{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    &:not(:last-child) {
+        margin-bottom: 4px;
+    }
+}

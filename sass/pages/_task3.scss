@@ -1,0 +1,15 @@
+@import '../components/alert-info';
+@import '../components/text-options';
+@import '../components/buttons';
+
+@import '../components/task-header';
+
+.gallery{
+    margin: 20px 0px 0px 32px;
+    display: flex;
+    gap: 20px;
+}
+
+li{
+    list-style-type: none;
+}

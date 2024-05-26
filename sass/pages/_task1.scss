@@ -1,0 +1,49 @@
+@import '../components/alert-info';
+@import '../components/text-options';
+@import '../components/buttons';
+
+@import '../components/task-header';
+
+
+.container__task1{
+    width: 824px;
+    margin: 20px 228px;
+    display: flex;
+    gap: 20px;
+}
+
+.alert__info{
+    display: flex;
+    background-color:$alert-info-color;
+    width: 260px;
+    height: 152px;
+
+    &-icon{
+        width: 24px;
+        height: 24px;
+
+        margin: 11px 12px 41px 16px;
+    }
+}
+.alert__info-text{
+    margin-top: 10px;
+    
+}
+.info__{
+    &title{
+    font-size: $fs-16;
+    letter-spacing: 0.15px;
+    line-height: 150%;
+    }
+    &column-text{
+    letter-spacing: 0.17px;
+    line-height: 143%;
+    color: $sendary-text-color;
+    list-style-type: disc;
+    margin-left: 20px;
+    }
+}
+.item{
+    list-style-type: none;
+    margin-top: 12px;
+}

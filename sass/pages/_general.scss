@@ -1,0 +1,95 @@
+.task-container{
+    width: 944px;
+    margin-left:32px ;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+.task__list{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 16px 38px 16px 16px;
+}
+.task__link{
+    padding-top: 12px;
+}
+.header__title{
+    font-weight: $fw-400;
+    font-size: $fs-24;
+    letter-spacing: 0px;
+    line-height: 133%;
+
+    width: 960px;
+    margin: 90px auto 0px 32px;
+    padding: 16px 0px 36px 0px;
+}
+.layout__task{
+    gap: 15px;
+}
+.blue-code{
+    color:$blue-code-color;
+}
+.red-code{
+    color: $red-code-color;
+}
+.green-code{
+    color:$green-code-color;
+}
+.yelow-code{
+    color:$yelow-code-color;
+}
+ol, ul{
+    margin-left: 20px;
+}
+.task-code{
+    display: block;
+    background-color:rgb(246, 248, 250);
+}
+.task{
+    &__code-text{
+        font-size: 12px;
+        letter-spacing: 0.17px;
+        line-height: 120%;
+    }
+    &__block1{
+        width: 196px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 15px;
+        gap: 10px;
+    }
+    &__block2 {
+        padding: 15px;
+        width: 200px;
+    }
+    &__block3{
+        padding: 10px 15px;
+        width: 200px;
+    }
+    &__block4{
+        padding: 10px 15px;
+        width: 420px;
+    }
+    &__block5{
+        padding: 10px 15px;
+        width: 540px;
+    }
+}
+.main__layout, .main__task{
+    display: grid;
+    grid-template: repeat(1,1fr)/repeat(1, 240px 1fr);
+}
+
+.link-title{
+    font-size: 20px;
+    line-height: 143%;
+    letter-spacing: 0.17px;
+
+    color: $main-text-color;
+    &:hover{
+        color: $button-color;
+    }
+}
+.task-text{
+    line-height: 143%;
+    letter-spacing: 0.17px;
+}
