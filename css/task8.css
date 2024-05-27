@@ -282,6 +282,7 @@ img {
 @media (min-width: 678px) {
   .action-button {
     padding: 8px 272px;
+    width: auto;
   }
 }
 
