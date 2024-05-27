@@ -1,5 +1,6 @@
 const input = document.querySelector('.js-name-input');
 const nameOutput = document.querySelector('.js-name-output');
+const clearBtn = document.getElementById('clearBtn');
 
 function onInput (event) {
     if(event.currentTarget.value === ''){
@@ -8,10 +9,17 @@ function onInput (event) {
 };
 input.addEventListener('input', onInput);
 
-function onInputValidity(symbol){
-    if (symbol.key >= '0' && symbol.key <= '9'){
+function onInputValidity(input){
+    const symbol = input.data;
+    if (symbol >= '0' && symbol <= '9'){
         alert('В имени могут быть указаны только буквы');
-        symbol.preventDefault();
-    }
+        input.preventDefault();
+    };
 }
-input.addEventListener('keydown', onInputValidity)
+input.addEventListener('beforeinput', onInputValidity)
+
+function onClearBtnClick(){
+    input.value ='';
+    nameOutput.textContent = 'Anonymous';
+}
+clearBtn.addEventListener('click', onClearBtnClick);

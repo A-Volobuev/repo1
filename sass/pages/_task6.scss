@@ -4,6 +4,7 @@
 
 @import '../components/task-header';
 // 
+@import '../components/action-button';
 @import '../components/input-condition';
 
 .valid {
@@ -40,5 +41,25 @@
     color: $button-color;
 }
 
+.action-button{
+    margin-left: 30px;
+    @media(max-width: 678px){
+        display: flex;
+        align-items:center;
+        justify-content: center;
+    }
+}
 
+.button-text{
+    text-transform: uppercase;
+    padding: 8px 22px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+svg{
+    width: 24px;
+    height: 24px;
+}
 

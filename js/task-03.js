@@ -15,19 +15,32 @@ const images = [
 
 const galleryListEl = document.querySelector('.gallery');
 
-const elements = images.map(option=> {
-  const imgContainer = document.createElement('li');
-  const imgEl = document.createElement('img');
-  imgEl.src = option.url;
-  imgEl.alt = option.alt;
-  imgEl.width = 300;
-  imgEl.height = 200;
+const htmlImg = images.map(option => `
+<ul class="gallery">
+  <li>
+  <img src="${option.url}" alt="${option.alt}" width="300" height="200">
+  </li>
+</ul>
+`).join('');
 
-  imgContainer.appendChild(imgEl);
-  return imgContainer
-});
+galleryListEl.insertAdjacentHTML('afterbegin',` ${htmlImg} `);
 
 
-galleryListEl.append(...elements)
+
+  // Старое решение 
+// const elements = images.map(option=> {
+//   const imgContainer = document.createElement('li');
+//   const imgEl = document.createElement('img');
+//   imgEl.src = option.url;
+//   imgEl.alt = option.alt;
+//   imgEl.width = 300;
+//   imgEl.height = 200;
+
+//   imgContainer.appendChild(imgEl);
+//   return imgContainer
+// });
+
+
+// galleryListEl.append(...elements)
 
 // Я не придумал как это можно решить при помощи insertAdjacentHTML(), по этому решил по примуру как в видосах было

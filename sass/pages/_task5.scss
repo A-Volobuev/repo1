@@ -4,6 +4,7 @@
 
 @import '../components/task-header';
 // 
+@import '../components/action-button';
 @import '../components/input-condition';
 
 .container-task{
@@ -54,4 +55,25 @@
 }
 .input-condition:focus ~ label{
     color: $button-color;
+}
+
+.action-button{
+    @media(max-width: 678px){
+        display: flex;
+        align-items:center;
+        justify-content: center;
+    }
+}
+
+.button-text{
+    text-transform: uppercase;
+    padding: 8px 22px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+svg{
+    width: 24px;
+    height: 24px;
 }
