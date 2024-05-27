@@ -276,13 +276,21 @@ img {
 
 .controls-conteiner {
   display: flex;
-  margin: 24px 0px 0px 32px;
   position: relative;
   gap: 10px;
+  margin: 24px 0px 0px 32px;
+}
+@media (max-width: 678px) {
+  .controls-conteiner {
+    flex-direction: column;
+    padding-right: 32px;
+  }
 }
 
-.input-condition {
-  width: 133px;
+@media (min-width: 678px) {
+  .input-condition {
+    width: 133px;
+  }
 }
 
 .user-label {
@@ -341,4 +349,12 @@ svg {
 }
 .div-css-style:not(:last-child) {
   margin-bottom: 4px;
+}
+
+@media (max-width: 678px) {
+  .action-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }/*# sourceMappingURL=task10.css.map */

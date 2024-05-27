@@ -5,9 +5,16 @@
 @import '../components/task-header';
 
 .gallery{
-    margin: 20px 0px 0px 32px;
     display: flex;
     gap: 20px;
+    @media(max-width: 768px){
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    @media(min-width: 768px){
+        margin: 20px 0px 0px 32px;
+    }
 }
 
 li{

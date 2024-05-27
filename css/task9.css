@@ -257,6 +257,21 @@ img {
   font-size: 49px;
   font-weight: 500;
 }
+@media (max-width: 610px) {
+  .widget__text-color {
+    font-size: 38px;
+  }
+}
+@media (max-width: 460px) {
+  .widget__text-color {
+    font-size: 28px;
+  }
+}
+@media (max-width: 370px) {
+  .widget__text-color {
+    font-size: 20px;
+  }
+}
 
 .widget__button {
   margin-top: 40px;

@@ -9,13 +9,20 @@
 
 .controls-conteiner{
     display: flex;
-    margin: 24px 0px 0px 32px;
     position: relative;
     gap: 10px;
+    margin: 24px 0px 0px 32px;
+
+    @media(max-width: 678px){
+        flex-direction: column;
+        padding-right: 32px;
+    }
 } 
- 
+
 .input-condition{
-    width: 133px;
+    @media(min-width: 678px){
+        width: 133px;
+    }
 }
 .user-label{
     transform: translateY(-6px) translateX(10px);
@@ -58,5 +65,13 @@ svg{
     justify-content: center;
     &:not(:last-child) {
         margin-bottom: 4px;
+    }
+}
+
+.action-button{
+    @media(max-width: 678px){
+        display: flex;
+        align-items:center;
+        justify-content: center;
     }
 }

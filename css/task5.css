@@ -269,9 +269,18 @@ img {
 }
 
 .container-task__title {
-  font-size: 49px;
   font-weight: 500;
   margin-top: 30px;
+}
+@media (max-width: 456px) {
+  .container-task__title {
+    font-size: 38px;
+  }
+}
+@media (min-width: 456px) {
+  .container-task__title {
+    font-size: 49px;
+  }
 }
 
 .input-condition:not(:focus):valid {

@@ -232,10 +232,25 @@ img {
 }
 
 .container__task1 {
-  width: 824px;
-  margin: 20px 228px;
   display: flex;
   gap: 20px;
+  margin-top: 20px;
+}
+@media (max-width: 768px) {
+  .container__task1 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 844px) {
+  .container__task1 {
+    width: 824px;
+  }
+}
+@media (min-width: 1200px) {
+  .container__task1 {
+    margin: 20px 228px;
+  }
 }
 
 .alert__info {

@@ -17,6 +17,16 @@
 .widget__text-color{
     font-size: $fs-49;
     font-weight: $fw-500;
+
+    @media(max-width: 610px){
+        font-size: $fs-38;
+    }
+    @media(max-width: 460px){ 
+        font-size: $fs-28;
+    }
+    @media(max-width: 370px){ 
+        font-size: $fs-20;
+    }
 }
 
 .widget__button{

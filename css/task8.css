@@ -276,7 +276,13 @@ img {
 
 .action-button {
   margin-top: 16px;
-  padding: 8px 272px;
+  padding: 8px 0px;
+  width: 90%;
+}
+@media (min-width: 678px) {
+  .action-button {
+    padding: 8px 272px;
+  }
 }
 
 .login-form {
@@ -286,9 +292,19 @@ img {
   position: relative;
   margin-top: 20px;
 }
+@media (max-width: 678px) {
+  .login-form {
+    padding: 0px 10px;
+  }
+}
 
 .default-input {
-  width: 580px;
+  width: 90%;
+}
+@media (min-width: 678px) {
+  .default-input {
+    width: 580px;
+  }
 }
 
 .login-form__title {
@@ -301,6 +317,30 @@ img {
 
 .input-condition__password:placeholder-shown + .user-label__password {
   transform: translateY(-34px) translateX(-240px);
+}
+@media (max-width: 636px) {
+  .input-condition__password:-moz-placeholder-shown + .user-label__password {
+    transform: translateY(-34px) translateX(-200px);
+  }
+  .input-condition__password:placeholder-shown + .user-label__password {
+    transform: translateY(-34px) translateX(-200px);
+  }
+}
+@media (max-width: 546px) {
+  .input-condition__password:-moz-placeholder-shown + .user-label__password {
+    transform: translateY(-34px) translateX(-160px);
+  }
+  .input-condition__password:placeholder-shown + .user-label__password {
+    transform: translateY(-34px) translateX(-160px);
+  }
+}
+@media (max-width: 463px) {
+  .input-condition__password:-moz-placeholder-shown + .user-label__password {
+    transform: translateY(-34px) translateX(-130px);
+  }
+  .input-condition__password:placeholder-shown + .user-label__password {
+    transform: translateY(-34px) translateX(-130px);
+  }
 }
 
 .input-condition__password:not(:-moz-placeholder-shown) + .user-label__password {
@@ -316,6 +356,30 @@ img {
   padding: 0 0.2em;
   color: rgb(33, 150, 243);
 }
+@media (max-width: 636px) {
+  .input-condition__password:not(:-moz-placeholder-shown) + .user-label__password {
+    transform: translateY(-60px) translateX(-200px);
+  }
+  .input-condition__password:focus + .user-label__password, .input-condition__password:not(:placeholder-shown) + .user-label__password, и .input-condition__password:valid + .user-label__password {
+    transform: translateY(-60px) translateX(-200px);
+  }
+}
+@media (max-width: 546px) {
+  .input-condition__password:not(:-moz-placeholder-shown) + .user-label__password {
+    transform: translateY(-60px) translateX(-160px);
+  }
+  .input-condition__password:focus + .user-label__password, .input-condition__password:not(:placeholder-shown) + .user-label__password, и .input-condition__password:valid + .user-label__password {
+    transform: translateY(-60px) translateX(-160px);
+  }
+}
+@media (max-width: 463px) {
+  .input-condition__password:not(:-moz-placeholder-shown) + .user-label__password {
+    transform: translateY(-60px) translateX(-130px);
+  }
+  .input-condition__password:focus + .user-label__password, .input-condition__password:not(:placeholder-shown) + .user-label__password, и .input-condition__password:valid + .user-label__password {
+    transform: translateY(-60px) translateX(-130px);
+  }
+}
 
 .input-condition__email {
   margin-top: 20px;
@@ -327,6 +391,30 @@ img {
 
 .input-condition__email:placeholder-shown + .user-label__email {
   transform: translateY(-33px) translateX(-253px);
+}
+@media (max-width: 636px) {
+  .input-condition__email:-moz-placeholder-shown + .user-label__email {
+    transform: translateY(-34px) translateX(-213px);
+  }
+  .input-condition__email:placeholder-shown + .user-label__email {
+    transform: translateY(-34px) translateX(-213px);
+  }
+}
+@media (max-width: 546px) {
+  .input-condition__email:-moz-placeholder-shown + .user-label__email {
+    transform: translateY(-34px) translateX(-173px);
+  }
+  .input-condition__email:placeholder-shown + .user-label__email {
+    transform: translateY(-34px) translateX(-173px);
+  }
+}
+@media (max-width: 463px) {
+  .input-condition__email:-moz-placeholder-shown + .user-label__email {
+    transform: translateY(-34px) translateX(-143px);
+  }
+  .input-condition__email:placeholder-shown + .user-label__email {
+    transform: translateY(-34px) translateX(-143px);
+  }
 }
 
 .input-condition__email:not(:-moz-placeholder-shown) + .user-label__email {
@@ -341,4 +429,28 @@ img {
   background-color: white;
   padding: 0 0.2em;
   color: rgb(33, 150, 243);
+}
+@media (max-width: 636px) {
+  .input-condition__email:not(:-moz-placeholder-shown) + .user-label__email {
+    transform: translateY(-60px) translateX(-213px);
+  }
+  .input-condition__email:focus + .user-label__email, .input-condition__email:not(:placeholder-shown) + .user-label__email, и .input-condition__email:valid + .user-label__email {
+    transform: translateY(-60px) translateX(-213px);
+  }
+}
+@media (max-width: 546px) {
+  .input-condition__email:not(:-moz-placeholder-shown) + .user-label__email {
+    transform: translateY(-60px) translateX(-173px);
+  }
+  .input-condition__email:focus + .user-label__email, .input-condition__email:not(:placeholder-shown) + .user-label__email, и .input-condition__email:valid + .user-label__email {
+    transform: translateY(-60px) translateX(-173px);
+  }
+}
+@media (max-width: 463px) {
+  .input-condition__email:not(:-moz-placeholder-shown) + .user-label__email {
+    transform: translateY(-60px) translateX(-143px);
+  }
+  .input-condition__email:focus + .user-label__email, .input-condition__email:not(:placeholder-shown) + .user-label__email, и .input-condition__email:valid + .user-label__email {
+    transform: translateY(-60px) translateX(-143px);
+  }
 }/*# sourceMappingURL=task8.css.map */
