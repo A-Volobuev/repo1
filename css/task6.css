@@ -231,6 +231,20 @@ img {
   padding: 16px 0px 16px 0px;
 }
 
+.action-button {
+  background-color: rgb(33, 150, 243);
+  color: rgb(255, 255, 255);
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 500;
+  box-shadow: -2px 3px 3px rgba(0, 0, 0, 0.08);
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.08);
+}
+.action-button__decrement, .action-button__increment {
+  height: 42px;
+  width: 59px;
+}
+
 .container-task {
   position: relative;
 }
@@ -295,4 +309,28 @@ img {
 
 .input-condition:focus ~ label {
   color: rgb(33, 150, 243);
+}
+
+.action-button {
+  margin-left: 30px;
+}
+@media (max-width: 678px) {
+  .action-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.button-text {
+  text-transform: uppercase;
+  padding: 8px 22px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+svg {
+  width: 24px;
+  height: 24px;
 }/*# sourceMappingURL=task6.css.map */

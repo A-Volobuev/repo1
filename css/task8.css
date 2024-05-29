@@ -277,12 +277,15 @@ img {
 .action-button {
   margin-top: 16px;
   padding: 8px 0px;
-  width: 90%;
+}
+@media (max-width: 678px) {
+  .action-button {
+    width: 90%;
+  }
 }
 @media (min-width: 678px) {
   .action-button {
     padding: 8px 272px;
-    width: auto;
   }
 }
 
@@ -454,4 +457,57 @@ img {
   .input-condition__email:focus + .user-label__email, .input-condition__email:not(:placeholder-shown) + .user-label__email, и .input-condition__email:valid + .user-label__email {
     transform: translateY(-60px) translateX(-143px);
   }
+}
+
+#toastBox {
+  position: absolute;
+  top: -200px;
+  right: 30px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.toast {
+  width: 300px;
+  height: 80px;
+  background: white;
+  font-weight: 500;
+  margin: 15px 0px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  position: relative;
+  transform: translateX(100%);
+  animation: moveleft 0.5s linear forwards;
+}
+.toast::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 5px;
+  background: green;
+  animation: anim 5s linear forwards;
+}
+
+@keyframes moveleft {
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes anim {
+  100% {
+    width: 0;
+  }
+}
+.toast-icon {
+  margin: 0 20px;
+  font-size: 35px;
+}
+.toast-icon__success {
+  color: green;
 }/*# sourceMappingURL=task8.css.map */

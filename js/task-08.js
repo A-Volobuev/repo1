@@ -1,5 +1,8 @@
 const formEl = document.querySelector('.login-form');
 
+const toastBox = document.getElementById('toastBox');
+
+
 // Обработка отправки формы form.login-form должна быть по событию submіt
     // Добавляем слушателя событий
 formEl.addEventListener('submit', onFormElSubmit);
@@ -25,5 +28,18 @@ function onFormElSubmit(event) {
     console.log(objValue);
 
 // Очищаю поля инпутов
-    formEl.reset();
+    formEl.reset(); 
+
+// Меседж который мы выводим, добавляю тут, что бы использовать переменную mail
+    const successMsg = `<i class="fa-solid fa-circle-check toast-icon toast-icon__success"></i> ${mail} вошел в аккаунт`;
+
+// Появление окна
+const toast = document.createElement('div');
+toast.classList.add('toast');
+toast.innerHTML = successMsg;
+toastBox.appendChild(toast);
+
+setTimeout(()=>{
+    toast.remove();
+},6000);
 }; 
