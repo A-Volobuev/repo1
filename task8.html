@@ -29,12 +29,15 @@
 <form class="login-form">
     <h1 class="login-form__title">Email & Password</h1>
 
-    <input placeholder=""  type="email" name="email" id="email" class="default-input input-condition input-condition__email"/>
-    <label for="email" class="user-label user-label__email">Email *</label>
+    <section class="registration-form__input-container">
+        <input placeholder=""  type="email" name="email" id="email" class="input-default" required/>
+        <label for="email" class="input-default__text">Email *</label>
+    </section>
 
-    <input placeholder="" type="password" name="password" id="Password" class="default-input input-condition input-condition__password" />
-    <label for="Password" class="user-label user-label__password">Password *</label>
-
+    <section class="registration-form__input-container">
+        <input placeholder=""  type="password" name="password" id="Password" class="input-default" required />
+        <label for="Password" class="input-default__text">Password *</label>
+    </section>
 
     <button type="submit" class="action-button ">Login</button>
 

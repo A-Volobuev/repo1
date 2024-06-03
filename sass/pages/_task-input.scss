@@ -4,17 +4,23 @@
 
 @import '../components/task-header';
 // 
-@import '../components/input-condition';
 @import '../components/action-button';
+@import '../components/input-default';
 
 .main-container{
-    margin: 30px 0 0 131px;
+    margin: 10px 0 0 20px;
     display: flex;
     flex-direction: column;
     padding-bottom: 300px;
+
+    @media (min-width: 768px){
+        margin: 30px 0 0 131px;
+    }
 }
 .registration-conteiner, .login-container{
-    display: flex;
+    @media (min-width: 768px){
+        display: flex;
+    }
 }
 .container__title{
     width: 420px;
@@ -22,16 +28,23 @@
 }
 .container__title-el{
     font-size: $fs-34;
+    padding: 16px 0 ;
 }
 
 .registration-form__container, .login-form__container{
-    width: 584px;
+    width: 100%;
+    @media (min-width: 768px){
+        width: 584px;
+    }
 }
 .registration-form__header{
     font-size: $fs-24;
     padding: 16px 0;
     &:not(:first-child){
         margin-top: 32px;
+    }
+    @media (max-width: 768px){
+        margin-left: 15px;
     }
 }
 .registration-form__name, .registration-form__contacts{
@@ -49,15 +62,6 @@
     border-radius: 4px;
     width: 100%;
 }
-.input-default__text{
-    position: absolute;
-    left: 12px;
-    top: 16px;
-    pointer-events: none;
-    color: #00000099;
-    padding: 2px 4px;
-    transition: top .3s, color .3s;
-}
 
 // Кнопка
 .action-button{
@@ -72,8 +76,14 @@
 // Инпут комент
 .input-comment__input-container{
     position: relative;
-    margin: 30px 0px 0px 358px;
-    width: 600px;
+    margin: 30px 0px 0px 58px;
+    @media (max-width: 480px){
+        margin: 30px 0px 0px 0px;
+    }
+    @media (min-width: 1200px){
+        margin: 30px 0px 0px 358px;
+        width: 600px;
+    }
 }
 
 // Форма логина
@@ -102,30 +112,3 @@
 }
 
 // Настройка инпутов 
-.input-default:hover, select:hover{
-    border-color: $button-color;
-}
-
-.input-default:focus, select:hover{
-    border: 2px solid $button-color;
-}
-.input-default:focus + label, select:focus + label{
-    top:-7px;
-    color: $button-color;
-    background-color: white;
-}
-
-.input-default:valid + label, select:valid + label{
-    top:-7px;
-    background-color: white;
-}
-
-.input-default:not(:placeholder-shown):invalid {
-    border: 2px solid red;
-}
-
-.input-default:not(:placeholder-shown):invalid + label {
-    top: -7px;
-    color: red;
-    background-color: white;
-}

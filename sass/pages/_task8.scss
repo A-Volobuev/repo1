@@ -5,7 +5,7 @@
 @import '../components/task-header';
 // 
 @import '../components/action-button';
-@import '../components/input-condition';
+@import '../components/input-default';
 
 .action-button{
     margin-top: 16px;
@@ -32,7 +32,7 @@
     }
 }
 
-.default-input{
+.input-default{
     width: 90%;
     @media(min-width:678px){
     width: 580px;
@@ -42,69 +42,13 @@
 .login-form__title{
     font-size: $fs-34;
 }
-
-.input-condition__password:placeholder-shown + .user-label__password{
-    transform: translateY(-34px) translateX(-240px);
-    @media(max-width:636px){
-        transform: translateY(-34px) translateX(-200px);
-    }
-    @media(max-width:546px){
-        transform: translateY(-34px) translateX(-160px);
-    }
-    @media(max-width:463px){
-        transform: translateY(-34px) translateX(-130px);
+.registration-form__input-container{
+    position: relative;
+    &:not(:first-child){
+        margin-top: 20px;
     }
 }
 
-.input-condition__password:focus + .user-label__password, .input-condition__password:not(:placeholder-shown) + .user-label__password, и .input-condition__password:valid + .user-label__password{
-    transform: translateY(-60px) translateX(-240px) scale(1);
-    background-color: white;
-    padding: 0 .2em;
-    color: $button-color;
-
-    @media(max-width:636px){
-        transform: translateY(-60px) translateX(-200px);
-    }
-    @media(max-width:546px){
-        transform: translateY(-60px) translateX(-160px);
-    }
-    @media(max-width:463px){
-        transform: translateY(-60px) translateX(-130px);
-    }
-}
-
-.input-condition__email{
-    margin-top: 20px;
-}
-.input-condition__email:placeholder-shown + .user-label__email{
-    transform: translateY(-33px) translateX(-253px);
-    @media(max-width:636px){
-        transform: translateY(-34px) translateX(-213px);
-    }
-    @media(max-width:546px){
-        transform: translateY(-34px) translateX(-173px);
-    }
-    @media(max-width:463px){
-        transform: translateY(-34px) translateX(-143px);
-    }
-}
-
-.input-condition__email:focus + .user-label__email, .input-condition__email:not(:placeholder-shown) + .user-label__email, и .input-condition__email:valid + .user-label__email{
-    transform: translateY(-60px) translateX(-253px) scale(1);
-    background-color: white;
-    padding: 0 .2em;
-    color: $button-color;
-
-    @media(max-width:636px){
-        transform: translateY(-60px) translateX(-213px);
-    }
-    @media(max-width:546px){
-        transform: translateY(-60px) translateX(-173px);
-    }
-    @media(max-width:463px){
-        transform: translateY(-60px) translateX(-143px);
-    }
-}
 
 // Появление окна
 #toastBox{
