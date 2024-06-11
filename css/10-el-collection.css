@@ -240,6 +240,14 @@ img {
   padding: 8px 22px;
   cursor: pointer;
 }
+.button__input-registration, .button__input-login {
+  padding: 6px 16px;
+  font-weight: 500;
+  margin-top: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
 
 @keyframes anim {
   100% {
@@ -257,7 +265,7 @@ img {
   letter-spacing: 0px;
   line-height: 133%;
   width: 960px;
-  margin: 20px auto 0px 32px;
+  margin: 20px 0px 0px 32px;
   padding: 16px 0px 16px 0px;
 }
 

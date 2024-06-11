@@ -84,7 +84,19 @@
         padding: 8px 22px;
         cursor: pointer
     }
+
+// task-input
+    &__input-registration, &__input-login{
+    padding: 6px 16px;
+    font-weight: $fw-500;
+    margin-top: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
 }
+}
+
+
 
 @keyframes anim {
     100%{
