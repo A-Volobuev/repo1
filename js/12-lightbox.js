@@ -33,7 +33,12 @@ function onImgClick(event) {
 }
 
 // Инициализация SimpleLightbox
-const lightbox = new SimpleLightbox('.gallery a', {
-    captionsData: 'alt',
+// const lightbox = new SimpleLightbox('.gallery a', {
+//     captionsData: 'alt',
+//     captionDelay: 250,
+// });
+let gallery = new SimpleLightbox(".gallery a", {
+    captionSelector: "img",
+    captionsData: `alt`,
     captionDelay: 250,
-});
+  });

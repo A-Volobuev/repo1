@@ -13,24 +13,22 @@ const incrementBtn = document.querySelector('.js-increment');
 const valueEl = document.querySelector('.js-value');
 
 
-// нотифай 
-function notify () {
-    const perm = Notification.requestPermission();
-
-    if(perm == 'granted'){
-        new Notification('hi');
-        console.log('what');
-    } else {
-        console.log('error');
-    }
-};
-
-
 decrementBtn.addEventListener('click', () => {
     if(counter.value == 0) {
         decrementBtn.classList.add('disabled-button');
         decrementBtn.disabled;
-        notify();
+        // Меседж который мы выводим, добавляю тут, что бы использовать переменную 
+    const errorMsg = `<i class="fa-solid fa-circle-xmark toast-icon toast-icon__error"></i> Нужно добавить больше товаров`;
+    // Появление окна
+    const toast = document.createElement('div');
+    toast.classList.add('toast', 'toast__error');
+    toast.innerHTML = errorMsg;
+    toastBox.appendChild(toast);
+    
+    setTimeout(()=>{
+        toast.remove();
+    },6000);
+
     } else {
         counter.decrement();
     };
@@ -40,7 +38,16 @@ decrementBtn.addEventListener('click', () => {
 incrementBtn.addEventListener('click', () => {
     if(counter.value >= 10) {
         incrementBtn.disabled;
-        alert("Вы не можете добавить больше товаров");
+        // Меседж который мы выводим, добавляю тут, что бы использовать переменную 
+        const errorMsg = `<i class="fa-solid fa-circle-xmark toast-icon toast-icon__error"></i> Максимум товаров`;
+        // Появление окна
+        const toast = document.createElement('div');
+        toast.classList.add('toast', 'toast__error');
+        toast.innerHTML = errorMsg;
+        toastBox.appendChild(toast);
+        setTimeout(()=>{
+            toast.remove();
+        },6000);
     } else counter.increment();
 
     valueEl.textContent = counter.value;

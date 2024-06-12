@@ -5,6 +5,7 @@
 // 
 
 @import '../components/input-default';
+@import '../components/toast-notify';
 
 .login-form{
     display: flex;
@@ -36,57 +37,4 @@
     }
 }
 
-
-// Появление окна
-#toastBox{
-    position: absolute;
-    top: -200px;
-    right: 30px;
-    display: flex;
-    align-items: flex-end;
-    flex-direction: column;
-    overflow: hidden;
-    padding: 20px;
-}
-.toast{
-    width: 300px;
-    height: 80px;
-    background: white;
-    font-weight: 500;
-    margin: 15px 0px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    display: flex;
-    align-items:center;
-    position: relative;
-    transform: translateX(100%);
-    animation: moveleft 0.5s linear forwards;
-
-    &::after{
-        content: '';
-        position: absolute;
-        left: 0px;
-        bottom: 0px;
-        width: 100%;
-        height: 5px;
-        background: green;
-        animation: anim 5s linear forwards;
-    }
-}
-@keyframes moveleft{
-    100%{
-        transform: translateX(0);
-    }
-}
-@keyframes anim{
-    100%{
-        width: 0;
-    }
-}
-.toast-icon{
-    margin:0 20px;
-    font-size: 35px;
-    &__success{
-        color:green;
-    }
-}
 

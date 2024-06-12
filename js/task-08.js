@@ -35,7 +35,7 @@ function onFormElSubmit(event) {
 
 // Появление окна
 const toast = document.createElement('div');
-toast.classList.add('toast');
+toast.classList.add('toast', 'toast__success');
 toast.innerHTML = successMsg;
 toastBox.appendChild(toast);
 
