@@ -41,4 +41,4 @@ let gallery = new SimpleLightbox(".gallery a", {
     captionSelector: "img",
     captionsData: `alt`,
     captionDelay: 250,
-  });
+});
